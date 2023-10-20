@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Wellfleet);
 
 body {
-    background-color: #523620;
+    background-color: #94867c;
     color: #fff;
     font-family: 'Wellfleet', times, serif;
     font-size: 150%;
@@ -30,7 +30,7 @@ h1 {
 }
 
 #page1, #page2 {
-    background-color: fecc6f;
+    background-color: #fecc6f;
     height: 596px;
     padding: 10px;
     min-width: 779px;
