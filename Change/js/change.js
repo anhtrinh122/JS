@@ -38,5 +38,32 @@ function updateGreeting() {
     greetingElement.className = className;
 
     const timeString = `Thời gian đầy đủ:: ${currentTime}`;
-    const timeString2 = `Thời gian rút gọn:: ${currentTime.getHours()}`
+    const timeString2 = `Thời gian rút gọn: ${currentTime.getHours()}:${String(currentTime.getMinutes()).padStart(2, '0')}:${String(currentTime.getSeconds()).padStart(2, '0')}`;
+    timeElement.textContent = timeString;
+    timeElement2.textContent = timeString2;
+
+    secondsElement.textContent = currentTime.getSeconds();
 }
+
+    // Gọi hàm cập nhật mỗi giây
+    setInterval(updateGreeting, 1000);
+
+    // Cập nhật lần đầu khi tải trang
+    updateGreeting();
+
+    function changeColor() {
+        const textElement = document.getElementById('text');
+        // Lấy ra màu sắc hiện tại của phần tử
+        const currentColor = textElement.style.color;
+
+        if (currentColor == 'blue') {
+            textElement.style.color = 'red';
+            textElement.textContent = 'Văn bản màu đỏ rồi sẽ thay màu';
+        } else {
+            textElement.style.color = 'blue';
+            textElement.textContent = 'Văn bản màu xanh rồi sẽ thay màu';
+        }
+    }
+
+// Gọi hàm thay đổi mỗi giây
+setInterval(changeColor, 1000);

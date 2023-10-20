@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gia Va So Luong San Pham</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1 id="time"></h1>
+        <h1>Giờ hôm nay: <span id="time2">0</span></h1>
+        <h2>Bảng giá sản phẩm:</h2>
+        <div id="banggia">
+            <input
+                type="number"
+                id="soluong"
+                name="soluong"
+                min="0"
+                value="0"
+                onchange="tinhtong()"
+            />
+            <p class="hihi">Số lượng sản phẩm: <span id="slsp">slsp</span></p>
+            <p class="hihi">Giá: $<span id="gia">35</span></p>
+            <p class="hihi">Total: $<span id="total"></span></p>
+        </div>
+    </body>
+    <script src="style.js"></script>
+</html>

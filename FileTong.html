@@ -36,13 +36,13 @@
             var currentHour = currentTime.getHours();
 
             if (currentHour < 12){
-                greeting = 'chao buoi sang';
+                greeting = 'Chào Buổi Sáng';
                 className = 'morning';
             } else if (currentHour <18){
-                greeting = 'chao buoi chieu';
+                greeting = 'Chào Buổi Chiều';
                 className = 'afternoon';
             }else {
-                greeting = 'chao buoi toi';
+                greeting = 'Chào Buổi Tối';
                 className = 'evening';
             }
             greetingElement.textContent = greeting;
